@@ -1,0 +1,35 @@
+// récuperer l'élément boutton
+const btnAction = document.getElementById("btnTask");
+
+// listner with click event
+btnAction.addEventListener("click", () => {
+    // recuperer task
+    const textTask = document.getElementById("textToDo").value.trim();
+    
+    // tester la validité des données inserées
+    if(textTask === ""){
+        alert("veuillez inserer une tâche valide !");
+        return;
+    }
+
+    // creer l'objet <li> pour l'associé après
+    const liTask = document.createElement("li");
+
+    liTask.innerHTML = `
+        <span>${textTask}</span>
+        <bouton class="delete">Supprimer</button>
+    `;
+
+    const taskList = document.getElementById('listTask');
+
+    taskList.appendChild(liTask);
+    textTask.value = '';
+
+    // Gestionnaire d'événements pour le bouton "Supprimer"
+    liTask.querySelector('.delete').addEventListener('click', () => {
+    taskList.removeChild(liTask); // Supprime l'élément de la liste
+    });
+
+
+
+});

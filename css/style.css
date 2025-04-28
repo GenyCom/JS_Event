@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    margin-bottom: 20px; /* Espace sous le header */
+}
+#mainContener {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: green; /* Met le fond du bouton en vert */
+    color: white; /* Change la couleur du texte en blanc */
+    padding: 10px 15px; /* Ajoute de l'espace à l'intérieur du bouton */
+    border: none; /* Supprime la bordure par défaut */
+    cursor: pointer; /* Change le curseur au survol */
+    border-radius: 5px; /* Arrondit les coins du bouton */
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.clsdelete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
